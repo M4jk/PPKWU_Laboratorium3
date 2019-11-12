@@ -1,0 +1,21 @@
+Dokumentacja API projektu PPKWU_Laboratorium3:
+
+---------------------------------------------------------
+Metoda GET
+
+URL:
+http://localhost:8080/api/calendar/{year}/{month}
+
+Parametry:
+year - typ int - rok, dla którego ma być pobrany plik .ics z wydarzeniami ze strony wydziału EEIA
+month - typ int - miesiąc, dla którego ma być pobrany plik .ics z wydarzeniami ze strony wydziału EEIA
+
+Odpowiedź:
+Plik .ics, do którego zapisane zostały wydarzenia z kalendarza ze strony wydziału EEIA na podany miesiąc i rok
+
+
+Przykladowe zapytanie:
+http://localhost:8080/api/calendar/2019/11
+
+Odpowiedź:
+Wygenerowany plik .ics, który zawiera wydarzenia z kalendarza ze strony wydziału EEIA na miesiąc listopad 2019 roku
